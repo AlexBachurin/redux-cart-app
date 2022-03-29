@@ -29,7 +29,6 @@ const cartSlice = createSlice({
         },
         //remove single item, destructure payload right away
         removeItem: (state, { payload }) => {
-            console.log(payload)
             const filtered = state.cartItems.filter(item => item.id !== payload);
             state.cartItems = [...filtered];
         },
@@ -79,7 +78,6 @@ const cartSlice = createSlice({
             state.isLoading = true;
         },
         [getCartItems.fulfilled]: (state, action) => {
-            console.log(action)
             state.isLoading = false;
             state.cartItems = action.payload;
         },

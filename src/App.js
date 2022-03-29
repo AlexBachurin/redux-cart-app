@@ -10,6 +10,7 @@ function App() {
   //fetch cart items once app loads
   useEffect(() => {
     dispatch(getCartItems())
+    //eslint-disable-next-line
   }, [])
 
   //loading
