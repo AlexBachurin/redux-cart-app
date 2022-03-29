@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { clearCart, calculateTotals } from '../features/cart/cartSlice';
+import { calculateTotals } from '../features/cart/cartSlice';
 import { openModal } from '../features/modal/modalSlice';
 import CartItem from './CartItem'
 const CartContainer = () => {
